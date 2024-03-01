@@ -7,6 +7,12 @@
         "context": [""]
       },
       {
+        "tag": "bem_estar",
+        "patterns": ["como vai?", "tudo bem?", "como você está?", "como vai seu dia?"],
+        "responses": ["Eu estou ótimo, espero que esteja tudo bem com você também!"],
+        "context": [""]
+      },
+      {
         "tag": "medicacao_dipirona",
         "patterns": ["posso tomar dipirona?", "estou com dor de cabeça, posso tomar dipirona?", "estou com dor muscular, posso tomar dipirona?", "pra que serve o dipirona?"],
         "responses": ["A dipirona é um anti-inflamatório não esteroidal (AINE) com ação antitérmica (alívio de febres) e analgésica (alívio de dores). Pode ser encontrado com os nomes comerciais de Novalgina, Dorflex, Neosaldina, Lisador Dip, Benegrip, entre outros. É um dos medicamentos para queixas do tipo mais utilizados no Brasil. Vale lembrar, em caso de persistencia de dor, procure um médico"],
@@ -25,13 +31,19 @@
         "context": [""]
       },
       {
+        "tag": "criador_bot",
+        "patterns": ["gostaria de saber quem criou esse bot", "criou bot", "quem te criou?", "quem desenvolveu você?", "quem te fez?"],
+        "responses": ["O meu criado se chama Antonny mendonça, você pode saber um pouco mais sobre acessando seu linkedin: https://www.linkedin.com/in/antonnymendonca/"],
+        "context": [""]
+      },
+      {
         "tag": "obrigado",
         "patterns": ["obrigada", "valeu", "basta", "já é o bastante", "muito obrigado", "até mais"],
         "responses": ["Disponha, a Vidaia care está sempre ao seu dispor!"],
         "context": [""]
       },
       {
-        "tag": "anything_else",
+        "tag": "nao_entendi",
         "patterns": [],
         "responses": ["Desculpa, não entendi o que você falou, tente novamente!"],
         "context": [""]

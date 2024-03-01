@@ -36,6 +36,7 @@ def create_bag_of_words(text, words):
     return np.array(bag)
 
 def predict_class(text, model):
+    print(text)
     """
     Faz a previsao do pacote de palavras, usamos como limite de erro 0.25 para evitarmos overfitting
     e classificamos esses resultados por força da probabilidade.
@@ -52,15 +53,18 @@ def predict_class(text, model):
 
 def get_response(intents, intents_json):
     """
-    pega a lista gerada e verifica o arquivo json e produz a maior parte das respostas com a maior probabilidade.
+    Pega a lista gerada e verifica o arquivo JSON para produzir a resposta com a maior probabilidade.
     """
     tag = intents[0]['intent']
     list_of_intents = intents_json['intents']
+    
+    result = ''  # Inicializa result fora do loop
     
     for idx in list_of_intents:
         if idx['tag'] == tag:
             result = random.choice(idx['responses']) if len(idx['responses']) > 1 else idx['responses'][0]
             break
+    print(tag, result)
             
     return result
 
@@ -72,7 +76,6 @@ app = Flask(__name__)
 def receive_message():
     # Receba os dados da mensagem do corpo da solicitação POST
     message_data = request.get_json()
-    print(message_data)
     with open('intents.json', 'r', encoding='utf-8') as intents_json:
         intents_json = json.load(intents_json)
     
