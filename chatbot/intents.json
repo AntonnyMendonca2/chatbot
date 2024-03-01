@@ -1,0 +1,40 @@
+{
+    "intents": [
+      {
+        "tag": "saudacoes",
+        "patterns": ["Oi", "ola", "olá", "bom dia","boa tarde", "boa noite"],
+        "responses": ["Oii, eu sou o Vidaio, o assistente virtual da Vidaia Care, como eu posso te ajudar?"],
+        "context": [""]
+      },
+      {
+        "tag": "medicacao_dipirona",
+        "patterns": ["posso tomar dipirona?", "estou com dor de cabeça, posso tomar dipirona?", "estou com dor muscular, posso tomar dipirona?", "pra que serve o dipirona?"],
+        "responses": ["A dipirona é um anti-inflamatório não esteroidal (AINE) com ação antitérmica (alívio de febres) e analgésica (alívio de dores). Pode ser encontrado com os nomes comerciais de Novalgina, Dorflex, Neosaldina, Lisador Dip, Benegrip, entre outros. É um dos medicamentos para queixas do tipo mais utilizados no Brasil. Vale lembrar, em caso de persistencia de dor, procure um médico"],
+        "context": [""]
+      },
+      {
+        "tag": "informacao_vidaia_care",
+        "patterns": ["informações vidaia care", "onde eu encontro informações sobre vidaia care?", "o que é a vidaia care?", "me fale sobre vidaia care"],
+        "responses": ["Nós somos a Vidaia Care, uma Startup healthtech que busca criar soluções para revolucionar a farmácia clínica do Brasil. Temos a missão de levar mais segurança e efetividade durante o tratamento com medicamentos através do contato mais próximo do paciente com o farmacêutico. Se cuide e fique por perto para saber mais sobre a Vidaia Care, afinal cuidar é o melhor remédio. Saiba mais em www.vidaia.com.br"],
+        "context": [""]
+      },
+      {
+        "tag": "falar_com_atendente",
+        "patterns": ["gostaria de falar com um atendente", "falar com atendente", "atendente", "humano", "falar com humano"],
+        "responses": ["Desculpe, no momento não há ninguém disponível para te responder! :("],
+        "context": [""]
+      },
+      {
+        "tag": "obrigado",
+        "patterns": ["obrigada", "valeu", "basta", "já é o bastante", "muito obrigado", "até mais"],
+        "responses": ["Disponha, a Vidaia care está sempre ao seu dispor!"],
+        "context": [""]
+      },
+      {
+        "tag": "anything_else",
+        "patterns": [],
+        "responses": ["Desculpa, não entendi o que você falou, tente novamente!"],
+        "context": [""]
+      }
+    ]
+  }

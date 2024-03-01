@@ -1,0 +1,18 @@
+{
+    "mysql": 
+        {
+            "user": "analista-de-dados",    
+            "password": "vidaia%2024",
+            "host": "app.vidaia.com.br",
+            "database": "32g75hr9138v59",
+            "raise_on_warnings": true
+        },
+    "postgres":
+        {
+            "database": "clientes", 
+            "user": "postgres",  
+            "password":"postgres",  
+            "host":"localhost",  
+            "port":"5432"
+        }
+ }
